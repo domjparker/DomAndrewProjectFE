@@ -7,7 +7,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 
-
 function Home() {
   return (
     <div className="backgroundDiv">
@@ -16,8 +15,8 @@ function Home() {
           <Nav></Nav>
         </Row>
         <div className="inputform">
-          <Form className='form'> 
-            <Form.Group controlId="formBasicEmail" className='formtext'>
+          <Form className="form">
+            <Form.Group controlId="formBasicEmail" className="formtext">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
               <Form.Text className="text-muted">
@@ -25,11 +24,11 @@ function Home() {
               </Form.Text>
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword" className='formtext'>
-              <Form.Label >Password</Form.Label>
-              <Form.Control  type="password" placeholder="Password" />
+            <Form.Group controlId="formBasicPassword" className="formtext">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
             </Form.Group>
-            <Button className='formtext' variant="secondary" type="submit">
+            <Button className="formtext" variant="secondary" type="submit">
               Sign in
             </Button>
           </Form>
