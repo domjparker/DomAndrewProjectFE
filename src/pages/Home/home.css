@@ -8,12 +8,26 @@
   background-size: cover;
 }
 
-
-.input-form{
+.main-row {
+  height: 90vh;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  height: 65vh;
+  justify-content: center;
+}
+
+.app-title {
+  text-align: center;
+}
+
+.app-title h1 {
+  color: orange;
+  font-size: 6rem;
+  font-family:'Courier New', Courier, monospace;
+  font-style: italic;
+}
+
+.input-form {
+  
 }
 
 .form{
