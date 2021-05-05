@@ -10,37 +10,46 @@ import Nav from "react-bootstrap/Nav";
 function Home() {
   return (
     <div className="backgroundDiv">
-    <Nav className="justify-content-end" activeKey="/home">
-    <Nav.Item>
-      <Nav.Link href="/home">About</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="link-1">Sign In</Nav.Link>
-    </Nav.Item>
-  </Nav>
-      <Container fluid="md">
-        <Row>
-          <Nav></Nav>
-        </Row>
-        <div className="inputform">
-          <Form className="form">
-            <Form.Group controlId="formBasicEmail" className="formtext">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
 
-            <Form.Group controlId="formBasicPassword" className="formtext">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Button className="formtext" variant="secondary" type="submit">
-              Sign in
+      <Nav className="justify-content-end" activeKey="/home">
+        <Nav.Item>
+          <Nav.Link href="/home">About</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">Sign In</Nav.Link>
+        </Nav.Item>
+      </Nav>
+      <Container fluid="md">
+        <Row className="main-row">
+          <Col lg={8} xs={12}>
+            <div className="app-title">
+              <h1>App Title</h1>
+            </div>
+          </Col>
+          <Col lg={4} xs={12}>
+            <div className="input-form">
+              <Form className="form">
+                <Form.Group controlId="formBasicEmail" className="formtext">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+              </Form.Text>
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword" className="formtext">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+                <Button className="formtext" variant="secondary" type="submit">
+                  Sign in
             </Button>
-          </Form>
-        </div>
+              </Form>
+            </div>
+          </Col>
+
+        </Row>
+
       </Container>
     </div>
   );
