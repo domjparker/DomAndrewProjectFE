@@ -9,7 +9,7 @@
 }
 
 
-.inputform{
+.input-form{
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -23,6 +23,6 @@
   background-color: rgba(245, 245, 245, 0.705);
 }
 
-.formtext {
+.form-text {
 margin: 3px;
 }
