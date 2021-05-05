@@ -1,13 +1,11 @@
-import React from 'react';
-import Img from '../../image/homepage.jpg';
-import './home.css'
-// import { Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Nav from 'react-bootstrap/Nav';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-
+import React from "react";
+import "./home.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
 
 function Home() {
   return (
@@ -22,13 +20,30 @@ function Home() {
   </Nav>
       <Container fluid="md">
         <Row>
-          <Col />
+          <Nav></Nav>
         </Row>
+        <div className="inputform">
+          <Form className="form">
+            <Form.Group controlId="formBasicEmail" className="formtext">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword" className="formtext">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+            <Button className="formtext" variant="secondary" type="submit">
+              Sign in
+            </Button>
+          </Form>
+        </div>
       </Container>
-      <p>Hello world</p>
-      <Button variant="primary">Primary</Button>{' '}
     </div>
-  )
+  );
 }
 
 export default Home;
