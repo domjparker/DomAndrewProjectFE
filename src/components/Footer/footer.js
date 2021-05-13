@@ -7,7 +7,7 @@ function Footer() {
       <Card className="text-center">
         <Card.Footer className="text-muted">
           <p>
-            &copy;
+            &copy; 2021
             <a href="https://www.linkedin.com/in/dominic-j-parker/"> Dominic Parker </a>
             &
             <a href="https://www.linkedin.com/in/andrew-bergstrom/"> Andrew Bergstrom</a>
