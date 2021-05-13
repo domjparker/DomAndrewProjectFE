@@ -10,7 +10,6 @@ import Nav from "react-bootstrap/Nav";
 function Home() {
   return (
     <div className="backgroundDiv">
-
       <Nav className="justify-content-end" activeKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">About</Nav.Link>
@@ -34,7 +33,7 @@ function Home() {
                   <Form.Control type="email" placeholder="Enter email" />
                   <Form.Text className="text-muted">
                     We'll never share your email with anyone else.
-              </Form.Text>
+                  </Form.Text>
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword" className="form-text">
@@ -43,13 +42,11 @@ function Home() {
                 </Form.Group>
                 <Button className="form-text" variant="secondary" type="submit">
                   Sign in
-            </Button>
+                </Button>
               </Form>
             </div>
           </Col>
-
         </Row>
-
       </Container>
     </div>
   );
