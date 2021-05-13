@@ -4,12 +4,14 @@ import Home from "./pages/Home/home.js";
 import Dashboard from "./pages/Dashboard/dashboard";
 import Project from "./pages/Project/project";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from "./components/Navbar/navbar"
 
 
 function App() {
   return (
     <>
       <Router>
+      <Navbar />
         <Switch>
           <Route exact path="/dashboard">
             <Dashboard />
