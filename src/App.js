@@ -4,6 +4,7 @@ import Home from "./pages/Home/home.js";
 import Dashboard from "./pages/Dashboard/dashboard";
 import Project from "./pages/Project/project";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./components/Footer/footer";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );
