@@ -21,14 +21,6 @@ function Home() {
 
   return (
     <div className="backgroundDiv">
-      <Nav className="justify-content-end" activeKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/home">About</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1">Sign In</Nav.Link>
-        </Nav.Item>
-      </Nav>
       <Container fluid="md">
         <Row className="main-row">
           <Col lg={8} xs={12}>
