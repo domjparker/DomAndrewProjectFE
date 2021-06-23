@@ -5,19 +5,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
 
 function Home() {
   return (
     <div className="backgroundDiv">
-      <Nav className="justify-content-end" activeKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/home">About</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1">Sign In</Nav.Link>
-        </Nav.Item>
-      </Nav>
       <Container fluid="md">
         <Row className="main-row">
           <Col lg={8} xs={12}>
