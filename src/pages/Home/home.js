@@ -5,8 +5,20 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import { useSelector, useDispatch } from 'react-redux';
+import { setEmail, selectEmail } from '../../app/store';
 
 function Home() {
+
+  const emailState = useSelector(selectEmail);
+
+  const dispatch = useDispatch();
+
+  const handleEmailChange = (event) => {
+    dispatch(setEmail(event.target.value));
+  }
+
   return (
     <div className="backgroundDiv">
       <Container fluid="md">
@@ -21,7 +33,7 @@ function Home() {
               <Form className="form">
                 <Form.Group controlId="formBasicEmail" className="form-text">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control type="email" placeholder="Enter email" onChange={(event) => handleEmailChange(event)} value={emailState}/>
                   <Form.Text className="text-muted">
                     We'll never share your email with anyone else.
                   </Form.Text>
