@@ -2,16 +2,21 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useSelector, useDispatch } from 'react-redux';
-import { setEmail, selectEmail } from './signInSlice';
+import { setEmail, selectEmail, setPassword, selectPassword } from './signInSlice';
 
 function SignIn() {
 
   const emailState = useSelector(selectEmail);
+  const passwordState = useSelector(selectPassword);
 
   const dispatch = useDispatch();
 
   const handleEmailChange = (event) => {
     dispatch(setEmail(event.target.value));
+  }
+
+  const handlePassword = (event) => {
+    dispatch(setPassword(event.target.value));
   }
 
   return (
@@ -27,7 +32,7 @@ function SignIn() {
 
         <Form.Group controlId="formBasicPassword" className="form-text">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control type="password" placeholder="Password" onChange={(event) => handlePassword(event)} value={passwordState} />
         </Form.Group>
         <Button className="form-text" variant="secondary" type="submit">
           Sign in

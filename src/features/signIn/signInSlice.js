@@ -82,3 +82,7 @@ export default signInSlice.reducer;
 export const selectEmail = (state) => {
   return state.email;
 }
+
+export const selectPassword = (state) => {
+  return state.password;
+}

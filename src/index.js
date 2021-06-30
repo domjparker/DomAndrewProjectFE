@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './app/App';
-import { store } from './app/store.js';
+import  store  from './app/store';
 import reportWebVitals from './reportWebVitals';
 
 
