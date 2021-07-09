@@ -30,11 +30,16 @@
   
 }
 
-.form{
-  border: 1px solid rgba(169, 169, 169, 0.555);
+.sign-in-div {
+  border: 1px solid rgba(169, 169, 169, 0.555); 
   border-radius: 6px;
   box-shadow: 10px 5px 5px rgb(204, 197, 197);
   background-color: rgba(245, 245, 245, 0.705);
+}
+
+#sign-in-buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .form-text {
