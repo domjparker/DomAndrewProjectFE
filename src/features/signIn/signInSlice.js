@@ -52,10 +52,10 @@ export default signInSlice.reducer;
 
 
 // Selectors
-export const selectEmail = (state) => {
-  return state.email;
+export const selectSignInEmail = (state) => {
+  return state.signIn.email;
 }
 
-export const selectPassword = (state) => {
-  return state.password;
+export const selectSignInPassword = (state) => {
+  return state.signIn.password;
 }

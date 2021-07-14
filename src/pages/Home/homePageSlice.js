@@ -9,7 +9,7 @@ const options = {
     toggleSignInShowing: (state, action) => {
       return {
         ...state,
-        signInShowing: action.payload
+        signInShowing: action.payload,
       }
     }
   }
@@ -23,6 +23,6 @@ export default homePageSlice.reducer;
 
 
 // Selectors
-export const selectSignInShowing = (state) => {
-  return state.signInShowing;
+export const selectIsSignInShowing = (state) => {
+  return state.homePage.signInShowing;
 }

@@ -2,15 +2,15 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useSelector, useDispatch } from 'react-redux';
-import { setFirstName, selectFirstName, setLastName, selectLastName, setEmail, selectEmail, setPassword, selectPassword, setConfirmPassword, selectConfirmPassword } from './SignUpSlice';
+import { setFirstName, selectSignUpFirstName, setLastName, selectSignUpLastName, setEmail, selectSignUpEmail, setPassword, selectSignUpPassword, setConfirmPassword, selectSignUpConfirmPassword } from './SignUpSlice';
 
 function SignUp() {
 
-  const firstNameState = useSelector(selectFirstName);
-  const lastNameState = useSelector(selectLastName);
-  const emailState = useSelector(selectEmail);
-  const passwordState = useSelector(selectPassword);
-  const confirmPasswordState = useSelector(selectConfirmPassword);
+  const firstNameState = useSelector(selectSignUpFirstName);
+  const lastNameState = useSelector(selectSignUpLastName);
+  const emailState = useSelector(selectSignUpEmail);
+  const passwordState = useSelector(selectSignUpPassword);
+  const confirmPasswordState = useSelector(selectSignUpConfirmPassword);
 
   const dispatch = useDispatch();
 
@@ -50,7 +50,6 @@ function SignUp() {
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
-
         <Form.Group controlId="formBasicPassword" className="form-text">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" onChange={(event) => handlePasswordChange(event)} value={passwordState} />

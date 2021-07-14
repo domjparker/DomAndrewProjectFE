@@ -7,12 +7,20 @@ import SignIn from '../../features/signIn/SignIn';
 import SignUp from '../../features/signUp/SignUp';
 import Button from 'react-bootstrap/Button';
 import { useSelector, useDispatch } from "react-redux";
-import { toggleSignInShowing , selectSignInShowing} from './homePageSlice';
+import { toggleSignInShowing , selectIsSignInShowing } from './homePageSlice';
 
 function Home() {
-  const signInShowingState = useSelector(selectSignInShowing);
-
+  const signInShowingState = useSelector(selectIsSignInShowing);
+  console.log("signInShowingState", signInShowingState)
   const dispatch = useDispatch();
+
+  // let signInOrSignUp;
+  // if (!signInShowingState) {
+  //   signInOrSignUp = <SignUp />;
+  // } 
+  // else {
+  //   signInOrSignUp = <SignIn />;
+  // }
 
   const showSignInForm = () => {
     // if (signInShowingState === false) {
@@ -37,12 +45,11 @@ function Home() {
           </Col>
           <Col lg={4} xs={12}>
             <div className="sign-in-div">
-              <row id="sign-in-buttons">
+              <Row id="sign-in-buttons">
                 <Button onClick={showSignInForm} variant="primary">Sign In</Button>
                 <Button onClick={showSignUpForm} variant="primary">Sign Up</Button>
-              </row>
-              <SignIn />
-              <SignUp />
+              </Row>
+              {signInShowingState ? <SignIn /> : <SignUp /> }
             </div>
           </Col>
         </Row>
