@@ -93,22 +93,22 @@ export default signUpSlice.reducer;
 // Selectors
 
 
-export const selectFirstName = (state) => {
-  return state.firstName;
+export const selectSignUpFirstName = (state) => {
+  return state.signUp.firstName;
 }
 
-export const selectLastName = (state) => {
-  return state.lastName;
+export const selectSignUpLastName = (state) => {
+  return state.signUp.lastName;
 }
 
-export const selectEmail = (state) => {
-  return state.email;
+export const selectSignUpEmail = (state) => {
+  return state.signUp.email;
 }
 
-export const selectPassword = (state) => {
-  return state.password;
+export const selectSignUpPassword = (state) => {
+  return state.signUp.password;
 }
 
-export const selectConfirmPassword = (state) => {
-  return state.confirmPassword;
+export const selectSignUpConfirmPassword = (state) => {
+  return state.signUp.confirmPassword;
 }

@@ -2,13 +2,13 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useSelector, useDispatch } from 'react-redux';
-import { setEmail, selectEmail, setPassword, selectPassword } from './signInSlice';
+import { setEmail, selectSignInEmail, setPassword, selectSignInPassword } from './signInSlice';
 
 function SignIn() {
 
-  const emailState = useSelector(selectEmail);
-  const passwordState = useSelector(selectPassword);
-
+  const emailState = useSelector(selectSignInEmail);
+  const passwordState = useSelector(selectSignInPassword);
+  console.log("signIn.js line 11", emailState)
   const dispatch = useDispatch();
 
   const handleEmailChange = (event) => {
@@ -29,7 +29,6 @@ function SignIn() {
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
-
         <Form.Group controlId="formBasicPassword" className="form-text">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" onChange={(event) => handlePassword(event)} value={passwordState} />
