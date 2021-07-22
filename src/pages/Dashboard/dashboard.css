@@ -1,0 +1,6 @@
+.projectBox {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  background-color: orange;
+}

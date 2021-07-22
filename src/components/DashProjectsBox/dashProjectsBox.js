@@ -1,9 +1,11 @@
 import React from "react";
 
-function DashProjectBox() {
+
+function DashProjectsBox() {
   return (
-    
+    <>
+    </>
   );
 }
 
-export default DashProjectBox;
+export default DashProjectsBox;
