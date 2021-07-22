@@ -13,18 +13,29 @@ function Dashboard() {
   }
 
   return (
-    <div>
-      <Button onClick={createProject} >New Project</Button>
+    <div className='dashBackground'>
+    
       <Container fluid="md" className='projectBox' style={{ height: "80vh"}}>
-        <Row className='projectBox' >
+        <Row className='newProjectButton'> 
+          <Col lg={6} xs={12}>
+          <Button onClick={createProject} >New Project</Button>
+          </Col>
+        </Row>
+        <Row className='projectDiv' >
           <Col lg={6} xs={12}>
           <div>
-            <h1 style={{ backgroundColor: "lightblue" }}>Hello Style!</h1>
+            <h3 style={{ backgroundColor: "lightblue" }}>Active Projects</h3>
+            <ul>
+              <li> project title</li>
+            </ul>
           </div>
           </Col>
           <Col lg={6} xs={12}>
           <div>
-            <h1 style={{ backgroundColor: "lightblue" }}>Hello Style!</h1>
+            <h2 style={{ backgroundColor: "lightblue" }}>Closed Projects</h2>
+            <ul>
+              <li> project title</li>
+            </ul>
           </div>
           </Col>
         </Row>
