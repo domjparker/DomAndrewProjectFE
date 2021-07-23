@@ -23,7 +23,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <Footer />
+        <Footer className='footer'/>
       </Router>
     </>
   );

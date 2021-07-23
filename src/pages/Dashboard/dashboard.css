@@ -1,0 +1,18 @@
+.dashBackground {
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.projectBox {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+}
+
+.projectDiv {
+  align-items: flex-end;
+  
+}
