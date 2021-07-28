@@ -1,8 +1,10 @@
 import React from 'react';
+import ListOfProjects from '../../features/listOfProjects/ListOfProjects';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button';
+import Scroll from '../../components/Scroll/scroll';
 import './dashboard.css';
 
 
@@ -21,7 +23,10 @@ function Dashboard() {
           <Button onClick={createProject} >New Project</Button>
           </Col>
         </Row>
-        <Row className='projectDiv' >
+        <Scroll>
+        <ListOfProjects />
+        </Scroll>
+        {/* <Row className='projectDiv' >
           <Col lg={6} xs={12}>
           <div>
             <h3 style={{ backgroundColor: "lightblue" }}>Active Projects</h3>
@@ -38,7 +43,7 @@ function Dashboard() {
             </ul>
           </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </div>
   )

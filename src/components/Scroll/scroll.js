@@ -1,15 +1,15 @@
 import React from 'react';
-import './scrollFeature.css';
+import './scroll.css';
 
-const ScrollFeature = (props) => {
+const Scroll = (props) => {
   return (
-    <div className="scroll-feature-div">
+    <div className="scroll--div">
       {props.children}
     </div>
   )
 }
 
-export default ScrollFeature;
+export default Scroll;
 
 // I pasted this from basically a ZTM-like project so it will 
 // need to be modified from its current state.
